@@ -3,6 +3,10 @@ AWSTemplateFormatVersion: "2010-09-09"
 Description: ECR Resources
 
 Resources:
+  XrayRepository:
+    Type: AWS::ECR::Repository
+    Properties:
+      RepositoryName: docker-in-aws/xray
   TodobackendRepository:
     Type: AWS::ECR::Repository
     Properties:
